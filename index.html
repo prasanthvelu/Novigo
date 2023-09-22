@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novigo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" id="logo"><img src="/images/novigo-logo.svg" alt="Novigo Solutions" height="40"><span
+                        id="lang">Arabic</span></a>
+                <div class="hamburger">
+                    <span class="hamburger_line"></span>
+                    <span class="hamburger_line"></span>
+                    <span class="hamburger_line"></span>
+                </div>
+                <ul class="menulist_discoverycall">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Experience</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+                <div class="menulist_discoverycall book_discovery_call_2">
+                    <button id="book_discovery_call">Book a Discovery Call</button>
+                </div>
+            </nav>
+        </header>
+
+        <section id="form_section">
+            <h5>Contact US</h5>
+            <h1>How can we help you?</h1>
+            <p>We'd love to hear from you, please fill out this form, our representative will contact you shortly
+                after receiving your request.</p>
+            <form action="">
+                <div class="col_1">
+                    <label>FULL NAME (Mandatory)</label>
+                    <input type="text" placeholder="Your full name" />
+                </div>
+                <div class="col_2">
+                    <label>EMAIL (Mandatory)</label>
+                    <input type="email" placeholder="you@company.com" />
+                </div>
+                <div class="col_3">
+                    <label>PHONE (Mandatory)</label>
+                    <input type="text" placeholder="Enter your mobile number" />
+                </div>
+                <div class="col_4">
+                    <label>COMPANY (Mandatory)</label>
+                    <input type="text" placeholder="Enter your company name" />
+                </div>
+                <div class="col_5">
+                    <label>MESSAGE (Mandatory)</label>
+                    <TExtarea rows="9" placeholder="Type your message..."></TExtarea>
+                </div>
+                <button>Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

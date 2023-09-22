@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: open sans,sans-serif;
+}
+
+.container{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Navbar section */
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 0px #e3e3e3;
+    height: 72px;
+}
+
+#logo{
+    text-decoration: none;
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;    
+}
+
+#lang{
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 3px;
+    font-size: 14px;
+    color: #000;
+}
+
+.hamburger{
+    display: none;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+header ul li a:hover{
+color: #ca041b;
+}
+
+#book_discovery_call{
+    padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #ca041b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#form_section{
+    margin: 60px auto 0 auto;
+    width: 60%;
+}
+
+#form_section h1, #form_section h5, #form_section p{
+    text-align: center;
+}
+
+#form_section h5{
+    color: #ca041b;
+    font-weight: 800;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.col_1, .col_2, .col_3, .col_4{
+    width: 50%;
+    padding: 0 15px 0 15px;
+    margin-bottom: 15px;
+}
+
+.col_5{
+    width: 100%;
+    padding: 0 15px 0 15px;
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button{
+    padding: 10px 0px;
+    border-radius: 18px;
+    border: none;
+    background-color: #ca041b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin: 35px 15px 0 15px;
+}
+
+@media (max-width: 991.98px) { 
+    #lang{
+    font-size: 13px;
+    }
+
+    header ul li a{
+        font-size: 13px;
+    }
+
+    #book_discovery_call{
+        font-size: 13px;
+    }
+ }
+
+ @media (max-width: 767.98px) { 
+    .container{
+        margin: 0;
+    }
+
+    header nav{
+        display: block;
+        height: auto;
+    }
+
+    #logo {
+        margin: 10px auto 0 auto;
+    }
+
+    .hamburger{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+
+    .hamburger_line{
+        width: 22px;
+        height: 4px;
+        display: block;
+        background-color: #515d60;
+    }
+
+    .hamburger_line:not(:first-child){
+        margin-top: 4px;
+    }
+
+    header ul{
+        display: block;
+        background-color: #091233;
+        padding-top: 7.5px;
+    }
+
+    header ul li{
+        padding-bottom: 10px;
+    }
+
+    header ul li a{
+        font-size: 13px;
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    .menulist_discoverycall{
+        display: none;
+    }
+
+    .book_discovery_call_2{
+        background-color: #091233;
+        padding: 0 0 7.5px 15px;
+    }
+
+    #form_section{
+        width: 100%;
+    }
+
+    .col_1, .col_2, .col_3, .col_4{
+        width: 100%;
+    }
+
+    form button{
+        width: unset;
+        padding: 10px 30px;
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    label{
+        font-size: 13px;
+    }
+  }
