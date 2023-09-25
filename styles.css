@@ -130,7 +130,7 @@ form button{
     margin: 35px 15px 0 15px;
 }
 
-@media (max-width: 991.98px) { 
+/* @media (max-width: 991.98px) { 
     #lang{
     font-size: 13px;
     }
@@ -142,7 +142,7 @@ form button{
     #book_discovery_call{
         font-size: 13px;
     }
- }
+ } */
 
  @media (max-width: 767.98px) { 
     .container{
@@ -187,7 +187,6 @@ form button{
     }
 
     header ul li a{
-        font-size: 13px;
         color: #fff;
         padding: 10px 15px;
         display: block;
@@ -214,10 +213,10 @@ form button{
         width: unset;
         padding: 10px 30px;
         margin-top: 15px;
-        font-size: 13px;
+        /* font-size: 13px; */
     }
 
-    label{
+    /* label{
         font-size: 13px;
-    }
+    } */
   }
