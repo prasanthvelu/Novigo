@@ -12,17 +12,17 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <a href="#" id="logo"><img src="images/novigo-logo.svg" alt="Novigo Solutions" height="40"><span
-                        id="lang">Arabic</span></a>
-                <div class="hamburger">
-                    <span class="hamburger_line"></span>
-                    <span class="hamburger_line"></span>
-                    <span class="hamburger_line"></span>
-                </div>
-                <ul class="menulist_discoverycall">
+    <header>
+        <nav class="container">
+            <a href="#" id="logo"><img src="images/novigo-logo.svg" alt="Novigo Solutions" height="40"><span
+                    id="lang">Arabic</span></a>
+            <div class="hamburger">
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+                <span class="hamburger_line"></span>
+            </div>
+            <div class="menulist_discoverycall">
+                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Our Experience</a></li>
                     <li><a href="#">About US</a></li>
@@ -36,17 +36,22 @@
                     </li>
                     <li><a href="#">Contact US</a></li>
                 </ul>
-                <div class="menulist_discoverycall book_discovery_call_2">
-                    <button id="book_discovery_call">Book a Discovery Call</button>
-                </div>
-            </nav>
-        </header>
+            </div>
 
-        <section id="form_section">
-            <h5>Contact US</h5>
-            <h1>How can we help you?</h1>
-            <p>We'd love to hear from you, please fill out this form, our representative will contact you shortly
-                after receiving your request.</p>
+            <div class="menulist_discoverycall book_discovery_call_2">
+                <button id="book_discovery_call">Book a Discovery Call</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="form_section" class="container">
+        <div>
+            <div class="contactus">
+                <h5>Contact US</h5>
+                <h1>How can we help you?</h1>
+                <p>We'd love to hear from you, please fill out this form, our representative will contact you shortly
+                    after receiving your request.</p>
+            </div>
             <form action="">
                 <div class="col_1">
                     <label>FULL NAME (Mandatory)</label>
@@ -70,24 +75,32 @@
                 </div>
                 <button>Send Message</button>
             </form>
-        </section>
+        </div>
+    </section>
 
-        <section id="office_section">
-            <div><h1>Our Offices</h1>
-            <p>Find a location nearest to you or book your discovery call</p></div>            
+    <section id="office_section">
+        <div class="container office_container">
+            <div style="text-align: center;">
+                <h1>Our Offices</h1>
+                <p>Find a location nearest to you or book your discovery call</p>
+            </div>
             <div id="locations">
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="india_kochi" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>India, Kochi</h4>
+                    <div class="location_col_2">
+                        <h4>India, Kochi</h4>
                         <p class="company">Novigo Solutions Pvt Ltd</p>
-                        <p class="address">Novigo Solutions Pvt Ltd 1st Floor, Carnival Infopark Phase 1, Kakkanand, Kochi Kerala - 682030</p>
+                        <p class="address">Novigo Solutions Pvt Ltd 1st Floor, Carnival Infopark Phase 1, Kakkanand,
+                            Kochi
+                            Kerala - 682030</p>
                         <p class="phone">080-42049432</p>
                         <p class="email">info@novigosolutions.com</p>
                     </div>
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="USA" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>USA</h4>
+                    <div class="location_col_2">
+                        <h4>USA</h4>
                         <p class="company">Novigo Solutions Inc.</p>
                         <p class="address">325 N. St. Paul Street Suite 3100 Dallas, Texas 75201, USA.</p>
                         <p class="phone">+1919-592-5521</p>
@@ -96,16 +109,19 @@
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="Chennai" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>India, Chennai</h4>
+                    <div class="location_col_2">
+                        <h4>India, Chennai</h4>
                         <p class="company">Novigo Solutions Pvt Ltd</p>
-                        <p class="address">Featherlite Technology Park, 200 Feet Radial Road, Iswarya Nagar, Pallavaram Chennai - 600043</p>
+                        <p class="address">Featherlite Technology Park, 200 Feet Radial Road, Iswarya Nagar, Pallavaram
+                            Chennai - 600043</p>
                         <p class="phone">080-42049432</p>
                         <p class="email">info@novigosolutions.com</p>
                     </div>
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="Singapore" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>Singapore</h4>
+                    <div class="location_col_2">
+                        <h4>Singapore</h4>
                         <p class="company">Novigo Solutions Pvt Ltd</p>
                         <p class="address">3 Church Street, Level 8, Samsung Hub, Singapore 049483</p>
                         <p class="phone">+65-92957000</p>
@@ -114,43 +130,53 @@
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="Bengaluru" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>India, Bengaluru</h4>
+                    <div class="location_col_2">
+                        <h4>India, Bengaluru</h4>
                         <p class="company">Novigo Solutions Pvt Ltd</p>
-                        <p class="address">Invenger Tower, 3rd Floor, Site No 1181, 7th Sector, HSR layout, Bengaluru - 560102</p>
+                        <p class="address">Invenger Tower, 3rd Floor, Site No 1181, 7th Sector, HSR layout, Bengaluru -
+                            560102</p>
                         <p class="phone">080-42049432</p>
                         <p class="email">info@novigosolutions.com</p>
                     </div>
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="KSA" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>KSA</h4>
+                    <div class="location_col_2">
+                        <h4>KSA</h4>
                         <p class="company">Novigo for Information Technology</p>
-                        <p class="address">Building No, 3141, Floor2, Anas Bin Malik, Al Malqa, Riyath, P.O box:135218292, Saudi Arabia</p>
+                        <p class="address">Building No, 3141, Floor2, Anas Bin Malik, Al Malqa, Riyath, P.O
+                            box:135218292,
+                            Saudi Arabia</p>
                         <p class="phone">+966 558022198</p>
                         <p class="email">info@novigosolutions.com</p>
                     </div>
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="Mangaluru" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>India, Mangaluru</h4>
+                    <div class="location_col_2">
+                        <h4>India, Mangaluru</h4>
                         <p class="company">Novigo Solutions Pvt Ltd</p>
-                        <p class="address">Karuna Pride, 5th floor, Falnir Road, Attavar, Mangaluru, Karnataka 575001</p>
+                        <p class="address">Karuna Pride, 5th floor, Falnir Road, Attavar, Mangaluru, Karnataka 575001
+                        </p>
                         <p class="phone">+91 9148162015</p>
                         <p class="email">info@novigosolutions.com</p>
                     </div>
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="UAE" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>UAE</h4>
+                    <div class="location_col_2">
+                        <h4>UAE</h4>
                         <p class="company">Novigo IT Solutions</p>
-                        <p class="address">Office No 1402, Floor 14, North Wing, City Tower 2, Sheikh Zayed Road, UAE</p>
+                        <p class="address">Office No 1402, Floor 14, North Wing, City Tower 2, Sheikh Zayed Road, UAE
+                        </p>
                         <p class="phone">+971 527 642 906</p>
                         <p class="email">info@novigosolutions.com</p>
                     </div>
                 </div>
                 <div class="location">
                     <div><img src="images/2014-2.png" alt="UK" width="100%" height="100%"></div>
-                    <div class="location_col_2"><h4>UK</h4>
+                    <div class="location_col_2">
+                        <h4>UK</h4>
                         <p class="company">Novigo Solutions Limited</p>
                         <p class="address">Innovation Centre, Gallows Hill, Warwick, United Kingdom CV34 6UW</p>
                         <p class="phone"></p>
@@ -158,8 +184,40 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_menu_social">
+                <img src="images/fav-icon.png" alt="">
+
+                <ul class="footer_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"> Experience</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+
+                <ul class="footer_social">
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #afafaf;"></i></a></li>
+                    <li><a href="#"> <i class="fa-brands fa-instagram fa-xl" style="color: #afafaf;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #afafaf"></i></a></li>
+                    <li><a href="#" style="padding-right: 0px;"><i class="fa-brands fa-linkedin fa-xl"
+                                style="color: #afafaf;"></i></a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>© 2023 <a href="#" class="disclaimer">Disclaimer</a> <a href="#" class="privacy_policy">Privacy
+                        Policy</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
 

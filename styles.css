@@ -9,30 +9,36 @@ body {
 }
 
 .container {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-span, a, label, button, p{
-    font-size: 14px;
+span,
+a,
+label,
+button,
+p {
+    font-size: 13px;
 }
 
-/* Navbar section */
+a {
+    text-decoration: none;
+}
 
-header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+li {
+    list-style: none;
+}
+
+header {
     box-shadow: 0 1px 0px #e3e3e3;
-    height: 72px;
 }
 
 #logo {
-    text-decoration: none;
     width: 200px;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    margin: 15px auto 0 auto;
 }
 
 #lang {
@@ -43,22 +49,50 @@ header nav {
 }
 
 .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+}
+
+.hamburger_line {
+    width: 22px;
+    height: 4px;
+    display: block;
+    background-color: #515d60;
+}
+
+.hamburger_line:not(:first-child) {
+    margin-top: 4px;
+}
+
+.menulist_discoverycall {
     display: none;
 }
 
 header ul {
-    display: flex;
+    display: block;
+    background-color: #091233;
+    padding-top: 7.5px;
+}
+
+header ul li {
+    padding-bottom: 10px;
 }
 
 header ul li a {
-    text-decoration: none;
-    padding: 0 10px 0 10px;
-    font-weight: 700;
-    color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
 }
 
-header ul li a:hover {
-    color: #ca041b;
+header ul li ul.dropdown {
+    position: unset;
+}
+
+header ul.dropdown a {
+    padding: 10px;
+    font-weight: unset;
 }
 
 header ul li ul.dropdown {
@@ -70,17 +104,17 @@ header ul li ul.dropdown {
 
 header ul li:hover ul.dropdown {
     display: block;
-    /* Display the dropdown */
 }
 
-header ul li {
-    list-style: none;
-}
-
-header ul.dropdown a{
+header ul.dropdown a {
     display: block;
     color: #fff;
     padding: 10px 24px;
+}
+
+.book_discovery_call_2 {
+    background-color: #091233;
+    padding: 0 0 7.5px 15px;
 }
 
 #book_discovery_call {
@@ -94,16 +128,14 @@ header ul.dropdown a{
 
 #form_section {
     margin: 60px auto 0 auto;
-    width: 60%;
 }
 
-#form_section h1,
-#form_section h5,
-#form_section p {
+.contactus{
+    padding: 0px 15px;
     text-align: center;
 }
 
-#form_section h1{
+#form_section h1 {
     margin: 10px 0px 5px 0px;
 }
 
@@ -122,7 +154,7 @@ form {
 .col_2,
 .col_3,
 .col_4 {
-    width: 50%;
+    width: 100%;
     padding: 0 15px 0 15px;
     margin-bottom: 15px;
 }
@@ -147,172 +179,256 @@ textarea {
 }
 
 form button {
-    padding: 10px 0px;
     border-radius: 18px;
     border: none;
     background-color: #ca041b;
     color: #fff;
     cursor: pointer;
-    width: 100%;
-    margin: 35px 15px 0 15px;
+    padding: 10px 30px;
+    margin: 15px 15px 0 15px;
 }
 
-#office_section{
+#office_section {
     margin-top: 50px;
     background-color: #e3f0f7;
-    padding: 50px 0px;
+    padding: 50px 0px 125px 0px;
 }
 
-#office_section h1{
+.office_container{
+    padding: 0px 15px;
+}
+
+#office_section h1 {
     margin-bottom: 5px;
 }
 
-#office_section > div:first-child{
-text-align: center;
+#locations {
+    display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    margin-top: 50px;
 }
 
-#locations{
+.location {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 50px 80px 0px 80px;
-    gap: 35px;
-}
-
-.location{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.location_col_2{
+.location_col_2 {
     background-color: #fff;
-    padding: 25px 20px 40px 20px;
+    padding: 25px 20px 25px 20px;
 }
 
-.company{
+.company {
     margin-top: 20px;
 }
 
-.address, .email{
+.address,
+.email {
     margin-top: 10px;
 }
 
-.phone{
+.phone {
     margin-top: 30px;
 }
 
-@media (max-width: 991.98px) { 
-    span, a, label, button, p{
-    font-size: 13px;
-    }
+footer {
+    background-color: #e3f0f7;
+}
 
-    header ul li a{
-        padding: 0 5px 0 5px;
-    }
+.footer_menu_social {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
 
-    #book_discovery_call{
-        padding: 10px 10px 10px 10px;
-    }
+.footer_menu {
+    display: block;
+}
 
-    #locations{
-        grid-template-columns: 1fr;
-    }
- }
+.footer_menu a {
+    display: block;
+    padding: 10px 0px;
+    color: #000;
+}
 
-@media (max-width: 767.98px) {
-    .container {
+.footer_menu li:first-child a {
+padding-top: 0px;
+}
+
+.footer_social {
+    display: block;
+}
+
+.footer_social a {
+    display: block;
+    padding: 10px 0px;
+}
+
+.footer_social li:first-child a {
+    padding-top: 0px;
+}
+
+hr {
+    margin-top: 25px;
+    border: 1px solid #66666621;
+}
+
+.copyright {
+    height: 70px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.disclaimer,
+.privacy_policy {
+    padding-left: 10px;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    body {
         margin: 0;
+    }
+
+    .container{
+        max-width: 720px;
     }
 
     header nav {
         display: block;
         height: auto;
-    }
-
-    #logo {
-        margin: 10px auto 0 auto;
-    }
-
-    .hamburger {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        display: block;
-    }
-
-    .hamburger_line {
-        width: 22px;
-        height: 4px;
-        display: block;
-        background-color: #515d60;
-    }
-
-    .hamburger_line:not(:first-child) {
-        margin-top: 4px;
-    }
-
-    header ul {
-        display: block;
-        background-color: #091233;
-        padding-top: 7.5px;
-    }
-
-    header ul li {
-        padding-bottom: 10px;
-    }
-
-    header ul li a {
-        color: #fff;
-        padding: 10px 15px;
-        display: block;
-    }
-
-    header ul li ul.dropdown {
-        position: unset;
-    }
-
-    header ul.dropdown a{
-        padding: 10px;
-        font-weight: unset;
-    }
-
-    .menulist_discoverycall {
-        display: none;
-    }
-
-    .book_discovery_call_2 {
-        background-color: #091233;
-        padding: 0 0 7.5px 15px;
-    }
-
-    #form_section, #office_section {
-        width: 100%;
-    }
+    }   
 
     .col_1,
     .col_2,
     .col_3,
     .col_4 {
-        width: 100%;
+        width: 50%;
     }
+    
+    .location {
+        grid-template-columns: 2fr 4fr;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        margin-left: 32px;
+        margin-right: 32px;
+    }   
+
+    .container{
+        max-width: 960px;
+    }
+
+    span,
+    a,
+    label,
+    button,
+    p {
+        font-size: 14px;
+    }
+
+    /* Navbar section */
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        padding: 0px 15px;
+    }
+    
+    #logo {
+        margin: 0px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menulist_discoverycall{
+        display: block;
+    }
+
+    header ul {
+        display: flex;
+        background-color: unset;
+    padding-top: 0px;
+    }
+
+    header ul li {
+        padding-bottom: 0px;
+    }
+
+    header ul li a {
+        padding: 0 10px 0 10px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    header ul li a:hover {
+        color: #ca041b;
+    }
+
+    .book_discovery_call_2 {
+        background-color: unset;
+        padding: 0px;
+    }
+
+    #form_section>div:first-child {
+        width: 70%;
+        margin: 0px auto;
+    }    
 
     form button {
-        width: unset;
-        padding: 10px 30px;
-        margin-top: 15px;
-        /* font-size: 13px; */
+        padding: 10px 0px;
+        width: 100%;
+        margin-top: 35px;
     }
 
-    /* label{
-        font-size: 13px;
-    } */
+    #locations {
+        grid-template-columns: repeat(2, 1fr);
+    }   
 
-    #locations{
-        margin: 50px 10px 0px 10px;
+    .footer_container{
+        padding: 0px 15px;
+    }
+    
+    .footer_menu_social {
+        justify-items: unset;
     }
 
-    .location{
-        grid-template-columns: 1fr;
+    .footer_menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_menu a {
+        padding: 0px 10px;
+    }
+
+    .footer_social {
+        display: flex;
+        justify-content: end;
+    }
+
+    .footer_social a {
+        padding: 0px 10px;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1320px;
     }
 }
